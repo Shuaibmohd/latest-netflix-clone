@@ -1,0 +1,421 @@
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+    --light-color: #f4f4f4;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.4em 1.3em;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.btn-xl {
+    font-size: 2rem;
+    padding: 1.5rem 2.1rem;
+    text-transform: uppercase;
+}
+
+.btn-lg {
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
+}
+
+
+section {
+    padding-bottom: 2em;
+    color: background;
+    color: #fff;
+}
+
+
+.showcase {
+    position: relative;
+    width: 100%;
+    height: 152vh;
+    background: url(/assets/img/main-bg.jpg) no-repeat center center/cover;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    box-shadow: inset 0px 0px 100px #000000, inset -0px -0px 100px #000000;
+}
+
+.showcase-top {
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+
+.showcase-top img {
+    width: 160px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 20;
+}
+
+/* Sign In Page */
+.login-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    /* background: rgba(0, 0, 0, 0.1); */
+
+}
+
+.login {
+    width: 450px;
+    height: auto;
+    margin: 8% auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    color: #737373;
+}
+
+.login-form {
+    padding: 60px 70px 30px;
+}
+
+.login-form h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.login-form form .btn-lg {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 2em;
+    text-transform: none;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.login-form .form-control {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.login-form .form-control input {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    background: #E8F0FE;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #000;
+}
+
+.login-form .form-control input:focus {
+    outline: none;
+    background-color: #333333;
+    color: #8C8C8C;
+}
+
+.form-options {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #737373;
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-options .help {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.form-options .help:hover {
+    text-decoration: underline;
+}
+
+.form-options label {
+    font-size: 14px;
+}
+
+.form-options .checkbox {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.login-container .login-footer {
+    padding: 1.5em 0;
+    padding: 0 70px 80px;
+}
+
+.login-container .login-footer p {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.login-container .login-footer small.info {
+    display: inline-block;
+    padding-right: 2em;
+}
+
+.login-container .login-footer .info a {
+    color: #0071EB;
+}
+
+.login-container .login-footer .info a:hover {
+    text-decoration: underline;
+}
+
+.login-footer a {
+    position: static;
+}
+
+
+
+/* fOOTER */
+
+.footer {
+    /* position: absolute; */
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 40px 0 40px;
+}
+
+.footer p {
+    font-size: 1.3em;
+}
+
+.footer,
+.footer a {
+    color: #737373;
+    font-size: 0.8rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li {
+    line-height: 1.9;
+}
+
+.footer .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer small {
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+/* Lanuguage Picker */
+.lan-picker {
+    background: transparent;
+    width: 120px;
+    height: 25px;
+    position: relative;
+    border: 1px solid #737373;
+    overflow: hidden;
+    padding: 25px 50px;
+}
+
+
+
+.lan-picker i.fa-chevron-down {
+    position: absolute;
+    top: 15px;
+    left: 95px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.lan-picker i.fa-globe {
+    position: absolute;
+    top: 15px;
+    left: 9px;
+    font-size: 1.5em;
+}
+
+.lan-picker select {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    color: #737373;
+    font-weight: 500;
+}
+
+.lan-picker select:focus {
+    outline: none;
+}
+
+.lan-picker option {
+    background: #fff;
+    color: #000;
+}
+
+
+
+
+/* Container */
+.container {
+    max-width: 85%;
+    margin: auto;
+    padding: 0 3em;
+}
+
+/* Text Styles */
+
+.text-xl {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.text-lg {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.text-md {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-dark {
+    color: #999;
+}
+
+
+
+@media(max-width: 768px) {
+
+    .showcase {
+        height: 172vh;
+    }
+
+    .login {
+        width: 350px;
+        height: auto;
+        margin: 25% auto;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+        color: #737373;
+    }
+
+    .login-form {
+        padding: 40px;
+    }
+
+}
+
+@media(max-width: 468px) {
+
+    .showcase {
+        height: 130vh;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+}
